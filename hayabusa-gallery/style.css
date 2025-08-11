@@ -367,3 +367,9 @@ body {
         padding: 40px 20px;
     }
 }
+
+.email-note {
+    font-size: 0.8em;
+    color: #9ca3af;
+    margin-top: -20px;
+}

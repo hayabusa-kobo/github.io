@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const placeholder = document.getElementById('email-placeholder');
+    if (placeholder) {
+        const user = 'q55660269';
+        const domain = 'gmail.com';
+        const emailAddress = user + '@' + domain;
+
+        let emailHtml = `<a href="mailto:${emailAddress}" class="email-link">${emailAddress}</a>`;
+        emailHtml += `<p class="email-note">（クリックで起動しない場合は、お手数ですがアドレスをコピーしてください）</p>`;
+
+        placeholder.innerHTML = emailHtml;
+    }
+});
+
         // タブ切り替え機能
         const tabButtons = document.querySelectorAll('.tab-button');
         const galleries = document.querySelectorAll('.gallery');
